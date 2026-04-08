@@ -136,14 +136,6 @@
             text-shadow: 0 3px 10px rgba(255,255,255,0.35);
         }
 
-        .hero-subtitle {
-            max-width: 720px;
-            margin: 0 auto;
-            color: #6b594a;
-            font-size: 1.02rem;
-            line-height: 1.9;
-        }
-
         .glass-card, .info-box, .lesson-box, .section-shell, .tool-card {
             background: var(--card);
             border: 1px solid var(--line);
@@ -443,7 +435,7 @@
 
                 <div class="lesson-box text-left">
                     <p class="font-bold text-xl mb-4 flex items-center serif gold">
-                        <span class="mr-3 text-2xl">✦</span> Today's Lesson
+                        <span class="mr-3 text-2xl">✦</span>Today's Lesson
                     </p>
                     <div class="grid grid-cols-3 gap-4">
                         <a href="#checking" class="lesson-step">
@@ -478,132 +470,89 @@
                 <div id="checking-content" class="accordion-content">
                     <div class="unit-grid-3">
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'unit-vector-checking')">１章：数と式</div>
-                            <div id="unit-vector-checking" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'check-vec-s1')">1節 式の計算</div>
-                                <div id="check-vec-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-check-1')">１章：数と式</div>
+                            <div id="unit-check-1" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'check-1-1')">1節 式の計算</div>
+                                <div id="check-1-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'check-vec-s2')">2節 実数</div>
-                                <div id="check-vec-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'check-1-2')">2節 実数</div>
+                                <div id="check-1-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'check-vec-s3')">3節 1次不等式</div>
-                                <div id="check-vec-s3" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'check-1-3')">3節 1次不等式</div>
+                                <div id="check-1-3" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'check-cur')">２章：集合と論証</div>
-                            <div id="check-cur" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'check-cur-s1')">1節 集合</div>
-                                <div id="check-cur-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">放物線の方程式</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-check-2')">２章：集合と論証</div>
+                            <div id="unit-check-2" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'check-2-1')">1節 集合</div>
+                                <div id="check-2-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'check-cur-s2')">2節 論証</div>
-                                <div id="check-cur-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">楕円の標準形</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">双曲線の標準形</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'check-2-2')">2節 論証</div>
+                                <div id="check-2-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'check-com')">３章：2次関数</div>
-                            <div id="check-com" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'check-com-s1')">1節 2次関数とそのグラフ</div>
-                                <div id="check-com-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">複素数の表示と絶対値</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-check-3')">３章：2次関数</div>
+                            <div id="unit-check-3" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'check-3-1')">1節 2次関数とそのグラフ</div>
+                                <div id="check-3-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'check-com-s2')">2節 2次方程式と2次不等式</div>
-                                <div id="check-com-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">複素数の極形式</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">ド・モアブルの定理</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'check-3-2')">2節 2次方程式と2次不等式</div>
+                                <div id="check-3-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                <div class="unit-grid-2">
+
+                    <div class="unit-grid-2 mt-5">
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'unit-tr-checking')">４章：図形と計量</div>
-                            <div id="unit-tr-checking" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'check-tr-s1')">1節 鋭角の三角比</div>
-                                <div id="check-tr-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-check-4')">４章：図形と計量</div>
+                            <div id="unit-check-4" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'check-4-1')">1節 鋭角の三角比</div>
+                                <div id="check-4-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'check-tr-s2')">2節 三角形への応用</div>
-                                <div id="check-tr-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'check-4-2')">2節 三角形への応用</div>
+                                <div id="check-4-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'check-da')">５章：データの分析</div>
-                            <div id="check-da" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'check-da-s1')">1節 データの分析</div>
-                                <div id="check-da-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">放物線の方程式</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-check-5')">５章：データの分析</div>
+                            <div id="unit-check-5" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'check-5-1')">1節 データの分析</div>
+                                <div id="check-5-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -617,127 +566,85 @@
                 <div id="thinking-content" class="accordion-content">
                     <div class="unit-grid-3">
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'unit-vector-thinking')">１章：数と式</div>
-                            <div id="unit-vector-thinking" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'think-vec-s1')">1節 式の計算</div>
-                                <div id="think-vec-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-think-1')">１章：数と式</div>
+                            <div id="unit-think-1" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'think-1-1')">1節 式の計算</div>
+                                <div id="think-1-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'think-vec-s2')">2節 実数</div>
-                                <div id="think-vec-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'think-1-2')">2節 実数</div>
+                                <div id="think-1-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'think-vec-s3')">3節 1次不等式</div>
-                                <div id="think-vec-s3" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'think-1-3')">3節 1次不等式</div>
+                                <div id="think-1-3" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'think-cur')">２章：集合と論証</div>
-                            <div id="think-cur" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'think-cur-s1')">1節 集合</div>
-                                <div id="think-cur-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">放物線の方程式</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-think-2')">２章：集合と論証</div>
+                            <div id="unit-think-2" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'think-2-1')">1節 集合</div>
+                                <div id="think-2-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'think-cur-s2')">2節 論証</div>
-                                <div id="think-cur-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">楕円の標準形</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">双曲線の標準形</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'think-2-2')">2節 論証</div>
+                                <div id="think-2-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'think-com')">３章：2次関数</div>
-                            <div id="think-com" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'thinkcom-s1')">1節 2次関数とそのグラフ</div>
-                                <div id="think-com-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">複素数の表示と絶対値</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-think-3')">３章：2次関数</div>
+                            <div id="unit-think-3" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'think-3-1')">1節 2次関数とそのグラフ</div>
+                                <div id="think-3-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'think-com-s2')">2節 2次方程式と2次不等式</div>
-                                <div id="think-com-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">複素数の極形式</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">ド・モアブルの定理</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'think-3-2')">2節 2次方程式と2次不等式</div>
+                                <div id="think-3-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                <div class="unit-grid-2">
+
+                    <div class="unit-grid-2 mt-5">
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'unit-tr-thinking')">４章：図形と計量</div>
-                            <div id="unit-tr-thinking" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'think-tr-s1')">1節 鋭角の三角比</div>
-                                <div id="think-tr-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-think-4')">４章：図形と計量</div>
+                            <div id="unit-think-4" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'think-4-1')">1節 鋭角の三角比</div>
+                                <div id="think-4-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'think-tr-s2')">2節 三角形への応用</div>
-                                <div id="think-tr-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'think-4-2')">2節 三角形への応用</div>
+                                <div id="think-4-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'think-da')">５章：データの分析</div>
-                            <div id="think-da" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'think-da-s1')">1節 データの分析</div>
-                                <div id="think-da-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">放物線の方程式</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-think-5')">５章：データの分析</div>
+                            <div id="unit-think-5" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'think-5-1')">1節 データの分析</div>
+                                <div id="think-5-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
                                 </div>
                             </div>
                         </div>
@@ -755,127 +662,85 @@
                 <div id="reflection-content" class="accordion-content">
                     <div class="unit-grid-3">
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'unit-vector-ref')">１章：数と式</div>
-                            <div id="unit-vector-ref" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'ref-vec-s1')">1節 式の計算</div>
-                                <div id="ref-vec-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-ref-1')">１章：数と式</div>
+                            <div id="unit-ref-1" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'ref-1-1')">1節 式の計算</div>
+                                <div id="ref-1-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'ref-vec-s2')">2節 実数</div>
-                                <div id="think-ref-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'ref-1-2')">2節 実数</div>
+                                <div id="ref-1-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'ref-vec-s3')">3節 1次不等式</div>
-                                <div id="ref-vec-s3" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'ref-1-3')">3節 1次不等式</div>
+                                <div id="ref-1-3" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'ref-cur')">２章：集合と論証</div>
-                            <div id="ref-cur" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'ref-cur-s1')">1節 集合</div>
-                                <div id="ref-cur-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">放物線の方程式</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-ref-2')">２章：集合と論証</div>
+                            <div id="unit-ref-2" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'ref-2-1')">1節 集合</div>
+                                <div id="ref-2-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'ref-cur-s2')">2節 論証</div>
-                                <div id="ref-cur-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">楕円の標準形</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">双曲線の標準形</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'ref-2-2')">2節 論証</div>
+                                <div id="ref-2-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'ref-com')">３章：2次関数</div>
-                            <div id="ref-com" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'ref-com-s1')">1節 2次関数とそのグラフ</div>
-                                <div id="ref-com-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">複素数の表示と絶対値</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-ref-3')">３章：2次関数</div>
+                            <div id="unit-ref-3" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'ref-3-1')">1節 2次関数とそのグラフ</div>
+                                <div id="ref-3-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'ref-com-s2')">2節 2次方程式と2次不等式</div>
-                                <div id="ref-com-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">複素数の極形式</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">ド・モアブルの定理</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'ref-3-2')">2節 2次方程式と2次不等式</div>
+                                <div id="ref-3-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                <div class="unit-grid-2">
+
+                    <div class="unit-grid-2 mt-5">
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'unit-tr-refing')">４章：図形と計量</div>
-                            <div id="unit-tr-refing" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'ref-tr-s1')">1節 鋭角の三角比</div>
-                                <div id="ref-tr-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-ref-4')">４章：図形と計量</div>
+                            <div id="unit-ref-4" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'ref-4-1')">1節 鋭角の三角比</div>
+                                <div id="ref-4-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
-                                <div class="section-header" onclick="toggleNested(this, 'ref-tr-s2')">2節 三角形への応用</div>
-                                <div id="ref-tr-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
+
+                                <div class="section-header" onclick="toggleNested(this, 'ref-4-2')">2節 三角形への応用</div>
+                                <div id="ref-4-2" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.1</a></div>
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" target="_blank" class="item-link-text">No.2</a></div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'ref-da')">５章：データの分析</div>
-                            <div id="ref-da" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'ref-da-s1')">1節 データの分析</div>
-                                <div id="ref-da-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">放物線の方程式</a>
-                                    </div>
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-ref-5')">５章：データの分析</div>
+                            <div id="unit-ref-5" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'ref-5-1')">1節 データの分析</div>
+                                <div id="ref-5-1" class="hidden">
+                                    <div class="link-item"><input type="checkbox" class="progress-checkbox"><a href="#" class="item-link-text">No.1</a></div>
                                 </div>
                             </div>
                         </div>
@@ -887,114 +752,39 @@
         <section id="slide" class="mb-12 fine-line pb-6">
             <div class="section-shell">
                 <div class="accordion-header text-3xl font-bold serif" onclick="toggleAccordion('slide-content')">
-                    <span><span class="section-icon">🥂</span>Slide</span>
+                    <span><span class="section-icon">🎞️</span>Slide</span>
                     <span class="arrow transition-transform">▼</span>
                 </div>
                 <div id="slide-content" class="accordion-content">
-                    <div class="unit-grid-3">
-                        <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'unit-vector-sl')">１章：数と式</div>
-                            <div id="unit-vector-sl" class="hidden mt-1">
-                                <div class="link-item">
-                                    <input type="checkbox" class="progress-checkbox">
-                                    <a href="https://separate-stealer-fc8.notion.site/33831ef08b94806ea5b8f4f20bbf994d?source=copy_link" target="_blank" class="item-link-text">1節 式の計算</a>
-                                </div>
-                                <div class="link-item">
-                                    <input type="checkbox" class="progress-checkbox">
-                                    <a href="slide\No.2 指数法則.pdf" target="_blank" class="item-link-text">2節 実数</a>
-                                </div>
-                                <div class="link-item">
-                                    <input type="checkbox" class="progress-checkbox">
-                                    <a href="slide\No.2 指数法則.pdf" target="_blank" class="item-link-text">3節 1次不等式</a>
-                                </div>
-                            </div>
+                    <div class="unit-section">
+                        <div class="link-item">
+                            <input type="checkbox" class="progress-checkbox">
+                            <a href="#" target="_blank" class="item-link-text">授業スライド No.1</a>
                         </div>
-                        <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'sl-cur')">２章：集合と論証</div>
-                            <div id="sl-cur" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'sl-cur-s1')">1節 集合</div>
-                                <div id="sl-cur-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">放物線の方程式</a>
-                                    </div>
-                                </div>
-                                <div class="section-header" onclick="toggleNested(this, 'sl-cur-s2')">2節 論証</div>
-                                <div id="sl-cur-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">楕円の標準形</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">双曲線の標準形</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'sl-com')">３章：2次関数</div>
-                            <div id="sl-com" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'sl-com-s1')">1節 2次関数とそのグラフ</div>
-                                <div id="sl-com-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">複素数の表示と絶対値</a>
-                                    </div>
-                                </div>
-                                <div class="section-header" onclick="toggleNested(this, 'sl-com-s2')">2節 2次方程式と2次不等式</div>
-                                <div id="sl-com-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">複素数の極形式</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">ド・モアブルの定理</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="link-item">
+                            <input type="checkbox" class="progress-checkbox">
+                            <a href="#" target="_blank" class="item-link-text">授業スライド No.2</a>
                         </div>
                     </div>
-                <div class="unit-grid-2">
-                        <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'unit-tr-sling')">４章：図形と計量</div>
-                            <div id="unit-tr-sling" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'sl-tr-s1')">1節 鋭角の三角比</div>
-                                <div id="sl-tr-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
-                                </div>
-                                <div class="section-header" onclick="toggleNested(this, 'sl-tr-s2')">2節 三角形への応用</div>
-                                <div id="sl-tr-s2" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
-                                    </div>
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="print" class="mb-12">
+            <div class="section-shell">
+                <div class="accordion-header text-3xl font-bold serif" onclick="toggleAccordion('print-content')">
+                    <span><span class="section-icon">🖨️</span>Print</span>
+                    <span class="arrow transition-transform">▼</span>
+                </div>
+                <div id="print-content" class="accordion-content">
+                    <div class="unit-section">
+                        <div class="link-item">
+                            <input type="checkbox" class="progress-checkbox">
+                            <a href="#" target="_blank" class="item-link-text">プリント No.1</a>
                         </div>
-                        <div class="unit-section">
-                            <div class="unit-header" onclick="toggleNested(this, 'sl-da')">５章：データの分析</div>
-                            <div id="sl-da" class="hidden mt-1">
-                                <div class="section-header" onclick="toggleNested(this, 'sl-da-s1')">1節 データの分析</div>
-                                <div id="sl-da-s1" class="hidden">
-                                    <div class="link-item">
-                                        <input type="checkbox" class="progress-checkbox">
-                                        <a href="#" class="item-link-text">放物線の方程式</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="link-item">
+                            <input type="checkbox" class="progress-checkbox">
+                            <a href="#" target="_blank" class="item-link-text">プリント No.2</a>
                         </div>
                     </div>
                 </div>
@@ -1025,32 +815,43 @@
     </main>
 
     <footer>
-        <p class="text-2xl mb-2 serif gold">数学Cのお部屋</p>
-        <p>&copy; 2026 数学Cのお部屋 - Restaurant Style Learning</p>
+        <p class="text-2xl mb-2 serif gold">数学Ⅰのお部屋</p>
+        <p>&copy; 2026 数学Ⅰのお部屋 - Restaurant Style Learning</p>
     </footer>
 
     <script>
         function toggleAccordion(id) {
             const content = document.getElementById(id);
+            if (!content) return;
+
             const header = content.previousElementSibling;
-            const arrow = header.querySelector('.arrow');
+            const arrow = header ? header.querySelector('.arrow') : null;
 
             content.classList.toggle('active');
-            arrow.style.transform = content.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+
+            if (arrow) {
+                arrow.style.transform = content.classList.contains('active')
+                    ? 'rotate(180deg)'
+                    : 'rotate(0deg)';
+            }
         }
 
         function toggleNested(headerEl, id) {
             const el = document.getElementById(id);
+            if (!el) return;
+
             el.classList.toggle('hidden');
             headerEl.classList.toggle('active');
         }
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                if (this.getAttribute('href') === '#') return;
+                const href = this.getAttribute('href');
+                if (href === '#') return;
 
                 e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
+
+                const targetId = href.substring(1);
                 const targetElement = document.getElementById(targetId);
 
                 if (targetElement) {
