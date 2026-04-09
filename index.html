@@ -752,18 +752,114 @@
         <section id="slide" class="mb-12 fine-line pb-6">
             <div class="section-shell">
                 <div class="accordion-header text-3xl font-bold serif" onclick="toggleAccordion('slide-content')">
-                    <span><span class="section-icon">🎞️</span>Slide</span>
+                    <span><span class="section-icon">🥂</span>Slide</span>
                     <span class="arrow transition-transform">▼</span>
                 </div>
                 <div id="slide-content" class="accordion-content">
-                    <div class="unit-section">
-                        <div class="link-item">
-                            <input type="checkbox" class="progress-checkbox">
-                            <a href="#" target="_blank" class="item-link-text">授業スライド No.1</a>
+                    <div class="unit-grid-3">
+                        <div class="unit-section">
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-vector-sl')">１章：数と式</div>
+                            <div id="unit-vector-sl" class="hidden mt-1">
+                                <div class="link-item">
+                                    <input type="checkbox" class="progress-checkbox">
+                                    <a href="https://separate-stealer-fc8.notion.site/33831ef08b94806ea5b8f4f20bbf994d?source=copy_link" target="_blank" class="item-link-text">1節 式の計算</a>
+                                </div>
+                                <div class="link-item">
+                                    <input type="checkbox" class="progress-checkbox">
+                                    <a href="slide\No.2 指数法則.pdf" target="_blank" class="item-link-text">2節 実数</a>
+                                </div>
+                                <div class="link-item">
+                                    <input type="checkbox" class="progress-checkbox">
+                                    <a href="slide\No.2 指数法則.pdf" target="_blank" class="item-link-text">3節 1次不等式</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="link-item">
-                            <input type="checkbox" class="progress-checkbox">
-                            <a href="#" target="_blank" class="item-link-text">授業スライド No.2</a>
+                        <div class="unit-section">
+                            <div class="unit-header" onclick="toggleNested(this, 'sl-cur')">２章：集合と論証</div>
+                            <div id="sl-cur" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'sl-cur-s1')">1節 集合</div>
+                                <div id="sl-cur-s1" class="hidden">
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" class="item-link-text">放物線の方程式</a>
+                                    </div>
+                                </div>
+                                <div class="section-header" onclick="toggleNested(this, 'sl-cur-s2')">2節 論証</div>
+                                <div id="sl-cur-s2" class="hidden">
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" class="item-link-text">楕円の標準形</a>
+                                    </div>
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" class="item-link-text">双曲線の標準形</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit-section">
+                            <div class="unit-header" onclick="toggleNested(this, 'sl-com')">３章：2次関数</div>
+                            <div id="sl-com" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'sl-com-s1')">1節 2次関数とそのグラフ</div>
+                                <div id="sl-com-s1" class="hidden">
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" class="item-link-text">複素数の表示と絶対値</a>
+                                    </div>
+                                </div>
+                                <div class="section-header" onclick="toggleNested(this, 'sl-com-s2')">2節 2次方程式と2次不等式</div>
+                                <div id="sl-com-s2" class="hidden">
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" class="item-link-text">複素数の極形式</a>
+                                    </div>
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" class="item-link-text">ド・モアブルの定理</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="unit-grid-2">
+                        <div class="unit-section">
+                            <div class="unit-header" onclick="toggleNested(this, 'unit-tr-sling')">４章：図形と計量</div>
+                            <div id="unit-tr-sling" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'sl-tr-s1')">1節 鋭角の三角比</div>
+                                <div id="sl-tr-s1" class="hidden">
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
+                                    </div>
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
+                                    </div>
+                                </div>
+                                <div class="section-header" onclick="toggleNested(this, 'sl-tr-s2')">2節 三角形への応用</div>
+                                <div id="sl-tr-s2" class="hidden">
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" target="_blank" class="item-link-text">No.1</a>
+                                    </div>
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" target="_blank" class="item-link-text">No.2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit-section">
+                            <div class="unit-header" onclick="toggleNested(this, 'sl-da')">５章：データの分析</div>
+                            <div id="sl-da" class="hidden mt-1">
+                                <div class="section-header" onclick="toggleNested(this, 'sl-da-s1')">1節 データの分析</div>
+                                <div id="sl-da-s1" class="hidden">
+                                    <div class="link-item">
+                                        <input type="checkbox" class="progress-checkbox">
+                                        <a href="#" class="item-link-text">放物線の方程式</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
